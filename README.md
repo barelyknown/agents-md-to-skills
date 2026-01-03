@@ -13,18 +13,26 @@ When invoked, the skill guides Codex to:
 
 ## Install
 
-Choose one of these options:
+### Install in Codex (recommended)
 
-### Repo-scoped (recommended for teams)
+In the Codex CLI, run:
 
-```bash
-mkdir -p .codex/skills
-cp -R agents-md-to-skills .codex/skills/
+```text
+$skill-installer https://github.com/barelyknown/agents-md-to-skills/tree/main/agents-md-to-skills
 ```
 
-### User-scoped (applies across all repos)
+Restart Codex after installing.
+
+### Manual install
+
+Clone this repo, then copy the skill folder into a Codex skills directory:
 
 ```bash
+# Repo-scoped (recommended for teams)
+mkdir -p .codex/skills
+cp -R agents-md-to-skills .codex/skills/
+
+# User-scoped (applies across all repos)
 mkdir -p ~/.codex/skills
 cp -R agents-md-to-skills ~/.codex/skills/
 ```
